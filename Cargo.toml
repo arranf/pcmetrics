@@ -1,0 +1,19 @@
+[package]
+name = "pcmetrics"
+version = "0.1.0"
+authors = ["Arran France <arran@arranfrance.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+
+influxdb = { version = "0.1.0", features = ["derive"] }
+tui = { version = "0.8", required-features=["termion"] }
+termion = "1.5"
+tokio = { version = "0.2", features = ["full"] }
+futures = "0.3"
+serde = "1"
+kankyo = "0.3"
+anyhow = "1"
